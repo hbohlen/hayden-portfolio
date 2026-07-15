@@ -61,6 +61,7 @@ function SiteHeader() {
       </a>
       <nav aria-label="Primary navigation">
         <a href="#story">Story</a>
+        <a href="#journey">Journey</a>
         <a href="#project">Project</a>
         <a href="#principles">Principles</a>
         <a href="#approach">Approach</a>
@@ -209,15 +210,15 @@ function Approach() {
 
 function Background() {
   return (
-    <section className="background section-shell" aria-labelledby="background-title">
+    <section id="journey" className="background section-shell" aria-labelledby="background-title">
       <div>
-        <SectionLabel>Background</SectionLabel>
-        <h2 id="background-title">A technical foundation shaped by persistence and service.</h2>
+        <SectionLabel>Journey</SectionLabel>
+        <h2 id="background-title">A path built one step at a time.</h2>
       </div>
       <div className="background-content">
-        <article><span>Education</span><h3>Metropolitan Community College</h3><p>Associate of Applied Science and Web Development Certificate. Coursework across React, full-stack development, JavaScript, databases, interface design, C#, and information security.</p></article>
-        <article><span>Additional study</span><h3>University of Nebraska at Omaha</h3><p>Coursework in computer science and computer engineering, including data structures, architecture, networks, and digital systems.</p></article>
-        <article><span>Anthropic Education</span><h3>AI Fluency · Claude 101 · AI Fluency for Nonprofits</h3><p>Completed July 2026, with the framework translated into a live, inspectable portfolio artifact.</p></article>
+        <article><span>2015–2018 · Start with service</span><h3>Engineering study and robotics mentoring at UNO</h3><p>I studied computer engineering and volunteered with middle- and high-school teams at the Nebraska Robotics Expo—learning that the best support helps people test, decide, and stay in control.</p></article>
+        <article><span>2023–2025 · Rebuild through practice</span><h3>Metropolitan Community College</h3><p>I continued my education through a Web Development Certificate and Associate of Applied Science, building a practical foundation in React, full-stack development, JavaScript, databases, interface design, C#, and information security.</p></article>
+        <article><span>2026 · Put the learning to work</span><h3>Anthropic Education and BotMentor</h3><p>After completing AI Fluency, Claude 101, and AI Fluency for Nonprofits, I translated the framework into a live, inspectable prototype—then documented its boundaries, evaluation, and handoff path.</p></article>
       </div>
     </section>
   )
@@ -247,10 +248,10 @@ export default function App() {
       <main id="main">
         <Hero />
         <OriginStory />
+        <Background />
         <CaseStudy />
         <Principles />
         <Approach />
-        <Background />
       </main>
       <Footer />
     </>
