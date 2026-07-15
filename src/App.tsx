@@ -156,6 +156,10 @@ function CaseStudy() {
         <SectionLabel>Featured project · BotMentor</SectionLabel>
         <h2 id="project-title">From “it doesn’t work” to the next safe decision.</h2>
         <p>BotMentor is a visual mentoring workspace for student robotics teams. It turns incomplete reports into inspectable hypotheses, safe tests, contextual learning, and a clear handoff when a human should step in.</p>
+        <aside className="prototype-callout" aria-label="BotMentor prototype scope">
+          <span>Prototype case study</span>
+          <p>This is an early-stage concept and a live demonstration of responsible design choices—not a production-ready diagnostic service or a claim of field-proven outcomes. I would partner with a nonprofit or volunteer organization to validate needs, accessibility, safety, and ownership before a real rollout.</p>
+        </aside>
         <div className="case-links">
           <ArrowLink href="https://botmentor.vercel.app" className="primary-link">Open live application</ArrowLink>
           <ArrowLink href="https://github.com/hbohlen/botmentor">Read the code</ArrowLink>
@@ -165,7 +169,7 @@ function CaseStudy() {
         <article><span>01 / Problem</span><h3>Uneven access to experienced help</h3><p>Students often need guidance when a mentor is not beside them—and a confident answer is not the same as a safe one.</p></article>
         <article><span>02 / Insight</span><h3>Reasoning is the transferable skill</h3><p>The durable outcome is not one fixed robot. It is a learner who can describe, inspect, test, and decide.</p></article>
         <article><span>03 / Product</span><h3>A workspace for shared evidence</h3><p>Visual system selection, guided observations, ranked possibilities, one safe test at a time, references, and mentor handoff.</p></article>
-        <article className="evidence-article"><span>04 / Evidence</span><h3>Built, deployed, and guardrailed</h3><ul><li>44 passing deterministic checks</li><li>11 mentoring and safety scenarios</li><li>Accessible React + TypeScript interface</li><li>Technical and plain-language runbooks</li></ul></article>
+        <article className="evidence-article"><span>04 / Evidence</span><h3>Built, deployed, and deliberately scoped</h3><ul><li>44 passing deterministic checks</li><li>11 mentoring and safety scenarios</li><li>Accessible React + TypeScript interface</li><li>Technical and plain-language runbooks</li></ul></article>
       </div>
     </section>
   )

@@ -20,6 +20,8 @@ test.describe('portfolio', () => {
     expect(dimensions.scrollWidth).toBeLessThanOrEqual(dimensions.clientWidth)
     await expect(page.getByRole('heading', { name: /I build practical AI tools/ })).toBeVisible()
     await expect(page.getByRole('link', { name: 'Explore BotMentor' })).toHaveAttribute('href', 'https://botmentor.vercel.app')
+    await expect(page.getByText('Prototype case study')).toBeVisible()
+    await expect(page.getByText(/not a production-ready diagnostic service/)).toBeVisible()
     await expect(page.getByRole('link', { name: /Resume/ }).first()).toHaveAttribute('href', '/hayden-bohlen-resume.pdf')
     await expect(page.getByRole('link', { name: /bohlenhayden@gmail.com/ })).toHaveAttribute('href', 'mailto:bohlenhayden@gmail.com')
   })

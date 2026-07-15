@@ -87,6 +87,9 @@ main { overflow: hidden; }
 .case-intro { align-self: start; position: sticky; top: 120px; }
 .case-intro > p { color: #40524e; font-size: 1rem; line-height: 1.7; }
 .case-intro h2 { margin-bottom: 24px; }
+.prototype-callout { margin-top: 26px; padding: 17px 18px; border: 1px solid rgba(148, 71, 17, .38); border-left: 4px solid var(--amber); background: rgba(255, 249, 237, .64); }
+.prototype-callout span { color: var(--amber); font-family: ui-monospace, monospace; font-size: .68rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.prototype-callout p { margin: 9px 0 0; color: #59452f; font-size: .88rem; line-height: 1.65; }
 .case-flow { border-top: 1px solid var(--ink); }
 .case-flow article { display: grid; grid-template-columns: 105px 1fr; column-gap: 28px; padding: 28px 0; border-bottom: 1px solid rgba(22,37,35,.25); }
 .case-flow article > span { grid-row: 1 / span 2; color: var(--teal); font-family: ui-monospace, monospace; font-size: .66rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
